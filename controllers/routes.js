@@ -11,7 +11,7 @@ router.use(function(req, res, next) {
 });
 
 router.route('/').get(function(req, res) {
-    console.log('got request');
+    console.log('---REQUEST---');
     res.sendFile(path.resolve(views_path) + '/index.html');
 });
 

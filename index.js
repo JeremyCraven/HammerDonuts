@@ -4,8 +4,7 @@ var app = express();
 
 var port = process.env.PORT || 80;
 
-app.use('/assets', express.static(path.join(__dirname, 'public')));
-app.use('/images', express.static(path.join(__dirname, 'public/assets/images')));
+app.use('/assets', express.static('assets'));
 
 app.use('/', require(__dirname + '/controllers/routes.js'));
 
