@@ -5,27 +5,85 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/main.css">
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon"/>
 	</head>
 	<body>
 		<!-- Nav Bar -->
-		<nav>
-			<div class="nav-wrapper hd_lightblue">
-		     	<a href="#" class="brand-logo center">Hammer Donuts</a>
-		    	<ul id="nav-mobile" class="left hide-on-med-and-down">
-		        	<li><a href="#">About</a></li>
-		        	<li><a href="#">Menu</a></li>
-		        	<li><a href="#">Delivery</a></li>
-		    	</ul>
-		    	<ul id="nav-mobile" class="right hide-on-med-and-down">
-		        	<li><a href="#">Contact</a></li>
-		    	</ul>
-			</div>
-		</nav>
-		<!-- Header -->
-		<header id="header">
-			<h1>Hammer Donuts</h1>
-			<p>A donut experience coming to West Lafayette.</p>
-		</header>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper default-primary-color">
+			     	<a href="#" class="brand-logo center"><img class="nav-img" src="assets/images/hd_long_r1.png" alt="Hammer Donuts"></a>
+			    	<ul id="nav-mobile" class="left hide-on-med-and-down">
+			        	<li><a class="nav-li" href="#about_link">About</a></li>
+			        	<li><a class="nav-li" href="#location_link">Location</a></li>
+			        	<ul id="dropdown1" class="dropdown-content">
+			        		<li><a href="#!">Classic Donuts</a></li>
+			        		<li class="divider"></li>
+			        		<li><a href="#!">Hammer Specialities</a></li>
+			        		<li class="divider"></li>
+			        		<li><a href="#!">Coffee</a></li>
+			        	</ul>
+			        	<li><a class="dropdown-button nav-li" href="#!" data-activates="dropdown1">Menu<i class="nav-icon material-icons right">arrow_drop_down</i></a></li>
+			        	<li><a class="nav-li" href="#">Order</a></li>
+			    	</ul>
+			    	<ul id="nav-mobile" class="right hide-on-med-and-down">
+			        	<li><a class="nav-li" href="#">Contact</a></li>
+			    	</ul>
+				</div>
+			</nav>
+		</div>
+		<!-- Parallax -->
+		<div class="parallax-container">
+    		<div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-2" data-parallax-speed="0.15" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-3" data-parallax-speed="0.1" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-4" data-parallax-speed="0.2" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-5" data-parallax-speed="0.3" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-6" data-parallax-speed="0.3" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-7" data-parallax-speed="0.4" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-8" data-parallax-speed="0.4" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-9" data-parallax-speed="0.5" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-10" data-parallax-speed="0.7" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-11" data-parallax-speed="0.7" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-12" data-parallax-speed="0.9" data-max-scroll="565"></div>
+    		<div class="parallax-layer layer-13" data-parallax-speed="0.9" data-max-scroll="565"></div>
+  		</div>
+
+  		<div class="content dark-primary-color">
+  			<div id="about_link">
+  				<br><br><br><br>
+  			</div>
+  			<div id="about">
+  		 		<h1>About</h1>
+  		 		<h3>My name is Tater Tot Sheenbean. I am <strike>Dish</strike> <strike>Nike</strike> Saucony now.</h3>
+  		 	</div>
+  		 	<div id="location">
+  		 		<h1>Location</h1>
+  		 		<h3>Located at Purdue somewhere. Not really sure where.</h3>
+  		 	</div>
+  		 	<div id="menu">
+  		 		<h1>Menu</h1>
+  		 		<h3>There will be donuts here.</h3>
+  		 	</div>
+  		 	<br><br><br><br>
+    		<h1>Coming soon to Purdue University....</h1>
+    		<footer class="page-footer">
+    			<div class="footer-copyright">
+    				<div class="container">
+    					© 2017 Hammer Donuts, Artwork: Malayka Abramson, Site Design: Jeremy Craven
+    				</div>
+    			</div>
+    		</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  			crossorigin="anonymous"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+		<script src="assets/js/parallax.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
